@@ -15,10 +15,10 @@ class BoyerMooreSearch:
                 return i
         return -1
 
-    def mismatch_in_text(self, currentPos):
+    def mismatch_in_text(self, currentPos1):
         for i in range(self.patLen - 1, -1, -1):
-            if self.pattern[i] != self.text[currentPos + i]:
-                return currentPos + i
+            if self.pattern[i] != self.text[currentPos1 + i]:
+                return currentPos1 + i
         return -1
 
     def bad_character_heuristic(self):
